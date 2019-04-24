@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test Cases #1]" parallel="tests">
+  <test thread-count="2" verbose="0" name="AccessibilityNode(failed)" parallel="tests">
+    <parameter name="device_name" value="AJNexus4"/>
+    <parameter name="port" value="4723"/>
+    <parameter name="platformVersion" value="7.0"/>
+    <classes>
+      <class name="AccessbilityTest">
+        <methods>
+          <include name="setDriverInstance"/>
+          <include name="verifyTextOnAccessibilityNodeQuery"/>
+        </methods>
+      </class> <!-- AccessbilityTest -->
+    </classes>
+  </test> <!-- AccessibilityNode(failed) -->
+</suite> <!-- Failed suite [Test Cases #1] -->
